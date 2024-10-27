@@ -57,11 +57,13 @@ function mealRecipeModal(meal) {
   meal = meal[0];
 
   let html = `
+  <div class="meal-details-content">
     <h2>${meal.strMeal}</h2>
     <h3>${meal.strCategory}</h3>
     <h3>Instructions:</h3>
     <p>${meal.strInstructions}</p>
     <img src="${meal.strMealThumb}" alt="Food" />
+  </div>
   `;
 
   mealDetailsContent.innerHTML = html;
